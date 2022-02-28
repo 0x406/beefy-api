@@ -1,12 +1,10 @@
 const axios = require('axios');
 
+const { fantomPools } = require('../pools/fantom');
+
 const getVaults = async vaultsEndpoint => {
   try {
-    const response = await axios.get(vaultsEndpoint);
-    const data = response.data;
-    let vaults = '[' + data.substring(data.indexOf('\n') + 1);
-    vaults = eval(vaults);
-    return vaults;
+    return fantomPools;
   } catch (err) {
     console.error(err);
     return 0;

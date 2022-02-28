@@ -2,6 +2,7 @@ const axios = require('axios');
 
 const fetchCoinGeckoPrices = async coins => {
   if (!coins) return {};
+  console.log('> updating coingecko prices');
   const ids = coins.join(',');
   const url = `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd`;
   let prices = {};

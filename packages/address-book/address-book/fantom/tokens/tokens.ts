@@ -38,6 +38,57 @@ const FTM = {
 } as const;
 
 const _tokens = {
+  EGUNK: {
+    name: 'Ent GUNK',
+    symbol: 'EGUNK',
+    address: '0x19840d508904587E08f262F518dA078bd4c560bf',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://fantomon.net',
+    description: 'Ent Gunk',
+    logoURI: 'https://swap.spiritswap.finance/images/coins/EGUNK.png',
+  },
+  PGUNK: {
+    name: 'Plasma GUNK',
+    symbol: 'PGUNK',
+    address: '0xf8Fc059dAfDCe4EF2EdFc72cbBAF410d7531E610',
+    chainId: 250,
+    decimals: 9,
+    website: 'https://fantomon.net',
+    description: 'Plasma Gunk',
+    logoURI: 'https://swap.spiritswap.finance/images/coins/PGUNK.png',
+  },
+  SEX: {
+    name: 'SEX',
+    symbol: 'SEX',
+    address: '0xD31Fcd1f7Ba190dBc75354046F6024A9b86014d7',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://solidexfinance.com/',
+    description: 'Solidex',
+    logoURI: 'https://assets.coingecko.com/coins/images/23855/large/photo_2022-02-23_09.01.21.jpeg',
+  },
+  SOLIDSex: {
+    name: 'SOLIDsex',
+    symbol: 'SOLIDsex',
+    address: '0x41adAc6C1Ff52C5e27568f27998d747F7b69795B',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://solidexfinance.com/',
+    description: 'Solidex',
+    logoURI: 'https://assets.coingecko.com/coins/images/23855/large/photo_2022-02-23_09.01.21.jpeg',
+  },
+  SOLID: {
+    name: 'Solidly',
+    symbol: 'SOLID',
+    address: '0x888EF71766ca594DED1F0FA3AE64eD2941740A20',
+    chainId: 250,
+    decimals: 18,
+    website: 'https://solidly.exchange/',
+    description:
+      'Solidly is an AMM allowing fully decentralized token swapping with support for low slippage trades between pegged assets like stablecoins.',
+    logoURI: 'https://assets.spookyswap.finance/tokens/SOLID.png',
+  },
   CRE8R: {
     name: 'CRE8R DAO',
     symbol: 'CRE8R',

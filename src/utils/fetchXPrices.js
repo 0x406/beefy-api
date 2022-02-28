@@ -10,9 +10,6 @@ const {
   fantom: {
     tokens: { BOO, xBOO, SCREAM, xSCREAM, CREDIT, xCREDIT },
   },
-  polygon: {
-    tokens: { QUICK, dQUICK },
-  },
 } = addressBook;
 
 const tokens = {
@@ -21,7 +18,6 @@ const tokens = {
     [SCREAM, xSCREAM],
     [CREDIT, xCREDIT],
   ],
-  polygon: [[QUICK, dQUICK]],
 };
 
 const getXPrices = async (tokenPrices, tokens, chainId) => {
@@ -58,10 +54,7 @@ const getXPrices = async (tokenPrices, tokens, chainId) => {
 };
 
 const fetchXPrices = async tokenPrices =>
-  Promise.all([
-    getXPrices(tokenPrices, tokens.fantom, FANTOM_CHAIN_ID),
-    getXPrices(tokenPrices, tokens.polygon, POLYGON_CHAIN_ID),
-  ]).then(data =>
+  Promise.all([getXPrices(tokenPrices, tokens.fantom, FANTOM_CHAIN_ID)]).then(data =>
     data
       .flat()
       .reduce((acc, cur, i) => ((acc[Object.values(tokens).flat()[i][1].symbol] = cur), acc), {})
